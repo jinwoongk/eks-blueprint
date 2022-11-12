@@ -36,6 +36,7 @@
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_TF_ROLE_NAME"></a> [TF\_ROLE\_NAME](#input\_TF\_ROLE\_NAME) | 각 계정에 TF 프로비저닝을 하기 위한 IAM Role(dev 계정의 IAM 유저(TFCUser)를 통해 Assume) | `string` | n/a | yes |
+| <a name="input_account_id"></a> [account\_id](#input\_account\_id) | Shared 계정의 Account ID | `string` | n/a | yes |
 | <a name="input_region"></a> [region](#input\_region) | default region | `string` | `"ap-northeast-2"` | no |
 
 ## Outputs
