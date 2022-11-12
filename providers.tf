@@ -22,7 +22,7 @@ terraform {
 }
 
 provider "aws" {
-  region = local.region
+  region = var.region
   assume_role {
     role_arn = join("", ["arn:aws:iam::", var.account_id, ":role/", var.TF_ROLE_NAME])
   }
