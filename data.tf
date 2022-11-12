@@ -2,7 +2,9 @@
 data "aws_caller_identity" "current" {}
 
 # Region in which to deploy the solution
-data "aws_region" "current" {}
+data "aws_region" "current" {
+  name = "ap-northeast-2"
+}
 
 # Availability zones to use in our solution
 data "aws_availability_zones" "available" {
